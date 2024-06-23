@@ -6,7 +6,7 @@ import CredentialsProvier from "next-auth/providers/credentials"; // 내 db로�
 export const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: "", //구글 클라이언트 id.
+      clientId: "", //구글 클라이언트 id..
       clientSecret: "", //구글 클라이언트 보안 비밀번호
     }),
     GithubProvider({
