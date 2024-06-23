@@ -1,0 +1,8 @@
+.user-signup {
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: tomato;
+  cursor: pointer;
+}
