@@ -1,3 +1,4 @@
+import Comment from "@/app/components/comment/comment";
 import { connectDB } from "@/utils/db";
 import { ObjectId } from "mongodb";
 
@@ -18,9 +19,12 @@ export default async function Detail({ params }) {
 
   return (
     <div>
-      <h4>디테일 페이지 입니다.</h4>
+      <h4 style={{ marginBottom: "15px" }}>디테일 페이지 입니다.</h4>
       <h4>{result.title}</h4>
       <p>{result.content}</p>
+
+      {/* 댓글 */}
+      <Comment boardId={result?._id.toString()} />
     </div>
   );
 }
